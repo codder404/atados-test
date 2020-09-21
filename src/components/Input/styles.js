@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   position: relative;
+  @media (max-width: 960px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const LabelInput = styled.label`
@@ -21,4 +25,8 @@ export const Input = styled.input`
   font-size: 1.2rem;
   border-radius: 4px;
   outline: 0;
+
+  @media (max-width: 960px) {
+    width: 100%;
+  }
 `;

@@ -47,6 +47,10 @@ export const Main = styled.main`
   margin: 3.2rem auto 3.2rem;
   padding-top: 6.4rem;
   overflow: hidden;
+
+  @media (max-width: 960px) {
+    overflow: auto;
+  }
 `;
 
 export const Form = styled.form`
@@ -58,6 +62,14 @@ export const FormGroup = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: 0 2rem;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+`;
+
+export const FormInputRadio = styled.div`
+  
 `;
 
 export const FormBtn = styled.div`
@@ -68,5 +80,9 @@ export const FormBtn = styled.div`
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 58.4rem;
+
+    @media (max-width: 960px) {
+      margin-left: 11.4rem;
+    }
   }
 `;
