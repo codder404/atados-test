@@ -1,14 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Container = styled.div`
-  background: linear-gradient(180deg, #A0ACE0 0%, #718096 100%) center center/cover;
-`;
+import * as S from './styles';
 
 const Hero = () => {
   return (
-    <Container>
-    </Container>
+    <S.Container>
+     <S.Header>
+       <S.HeaderContent>
+         <S.HeaderText>Viaje pelo mundo inteiro</S.HeaderText>
+         <S.HeaderDescription>
+           Aqui você encotra os melhores voos do mundo
+         </S.HeaderDescription>
+       </S.HeaderContent>
+     </S.Header>
+    </S.Container>
   )
 }
 
