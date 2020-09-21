@@ -6,9 +6,9 @@ import logo from '../../assets/icons/Logo.svg';
 import * as S from './styles';
 
 function Navbar() {
-  const [open, setOpen] = useState(false);
+  const [click, setClick] = useState(false);
 
-  const handleClick = () => setOpen(!open);
+  const handleClick = () => setClick(!click);
 
   return (
     <S.Navbar>
@@ -17,23 +17,26 @@ function Navbar() {
           <S.LogoImg src={logo} alt="Atatos" />
         </S.NavbarLogo>
         <S.MobileIcon onClick={handleClick}>
-          {open ? <FaIcon.FaTimes /> : <FaIcon.FaBars />}
+          {click ? <FaIcon.FaTimes /> : <FaIcon.FaBars />}
         </S.MobileIcon>
-        <S.NavbarMenu>
+        <S.NavbarMenu onClick={handleClick} click={click}>
           <S.NavbarItems>
             <S.NavbarLink href="/">Explore</S.NavbarLink>
           </S.NavbarItems>
-           <S.NavbarItems>
+          <S.NavbarItems>
             <S.NavbarLink href="/">Sobre nós</S.NavbarLink>
           </S.NavbarItems>
-           <S.NavbarItems>
+          <S.NavbarItems>
             <S.NavbarLink href="/">Seguros</S.NavbarLink>
           </S.NavbarItems>
            <S.NavbarItems>
             <S.NavbarLink href="/">Hóteis</S.NavbarLink>
           </S.NavbarItems>
-           <S.NavbarItems>
+          <S.NavbarItems>
             <S.NavbarLink href="/">Viagens</S.NavbarLink>
+          </S.NavbarItems>
+          <S.NavbarItems>
+            <S.NavbarLink href="/">Login</S.NavbarLink>
           </S.NavbarItems>
         </S.NavbarMenu>
       </S.NavbarContainer>
