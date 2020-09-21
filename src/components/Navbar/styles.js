@@ -26,7 +26,7 @@ export const NavbarLogo = styled.div`
   display: flex;
   align-items: center;
   justify-self: flex-start;
-  margin-left: 4rem;
+  margin-left: 10rem;
   cursor: pointer;
 `;
 
@@ -83,7 +83,7 @@ export const NavbarItems = styled.li`
 
   &:nth-of-type(6) {
     padding: 1.3rem;
-    margin-right: 1rem;
+    margin-right: 10rem;
     font-size: 1rem;
     font-weight: bold;
     background: transparent;
