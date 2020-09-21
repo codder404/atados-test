@@ -26,7 +26,7 @@ export const NavbarLogo = styled.div`
   display: flex;
   align-items: center;
   justify-self: flex-start;
-  margin-left: 10rem;
+  margin-left: 2rem;
   cursor: pointer;
 `;
 
