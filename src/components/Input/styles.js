@@ -5,17 +5,20 @@ export const Container = styled.div`
 `;
 
 export const LabelInput = styled.label`
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  color: #4A5568;
 `;
 
 export const Input = styled.input`
-  width: 100%;
-  height: 6rem;
-  margin-top: 0.8rem;
-  border-radius: 0.8rem;
+  width: 226px;
+  height: 48px;
   background: #F7FAFC;
-  border: 1 px solid #CBD5E0;
+  border: 1px solid #CBD5E0;
+  color: #A0AEC0;
+  margin-right: 1.5rem;
+  margin-top: 4px;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
   outline: 0;
-  padding: 0 1.6rem;
-  font-size: 1.6rem;
 `;

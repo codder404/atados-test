@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div `
  background-image: linear-gradient(#A0AEC0 100%, #718096 100%);
-  height: 60vh;
+  height: 70vh;
+  width: 100vw;
 `;
 
 export const Header = styled.section`
@@ -37,8 +38,35 @@ export const HeaderDescription = styled.p`
   color: #AAFAFF;
 `;
 
-export const Main = styled.main``;
+export const Main = styled.main`
+  background: #fff;
+  width: 100%;
+  height: 45vh;
+  max-width: 74rem;
+  border-radius: 4px;
+  margin: 3.2rem auto 3.2rem;
+  padding-top: 6.4rem;
+  overflow: hidden;
+`;
 
-export const Form = styled.form``;
+export const Form = styled.form`
+  
+`;
 
-export const FormGroup = styled.div``;
+export const FormGroup = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2rem;
+`;
+
+export const FormBtn = styled.div`
+  margin-top: 2rem;
+  background: #EDF2F7;
+
+  > button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 58.4rem;
+  }
+`;

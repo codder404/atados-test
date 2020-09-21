@@ -19,12 +19,14 @@ const Hero = () => {
      <S.Main>
        <S.Form>
          <S.FormGroup>
-           <Input name="origem" label="Origem"/>
-           <Input name="destino" label="Destiono" />
-           <Input name="date" label="Data de Ida/Retorno" />
-           <Input name="pessoas" label="Número de pessoas" />
+           <Input name="origem" label="Origem" text="Origem" info="text"/>
+           <Input name="destino" label="Destiono" text="Destino" info="text" />
+           <Input name="date" label="Data de Ida/Retorno" text="Data de Ida/Retorno" info="date" />
+           <Input name="pessoas" label="Número de pessoas" text="Número de pessoas" info="number" />
          </S.FormGroup>
-         <Button type="submit" primary big fontBig>Busque as viagens</Button>
+        <S.FormBtn>
+           <Button type="submit" primary big fontBig>Busque as viagens</Button>
+        </S.FormBtn>
        </S.Form>
      </S.Main>
     </S.Container>
