@@ -1,5 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+
+import Input from '../Input';
+import { Button } from '../Button';
 
 import * as S from './styles';
 
@@ -14,6 +16,17 @@ const Hero = () => {
          </S.HeaderDescription>
        </S.HeaderContent>
      </S.Header>
+     <S.Main>
+       <S.Form>
+         <S.FormGroup>
+           <Input name="origem" label="Origem"/>
+           <Input name="destino" label="Destiono" />
+           <Input name="date" label="Data de Ida/Retorno" />
+           <Input name="pessoas" label="Número de pessoas" />
+         </S.FormGroup>
+         <Button type="submit" primary big fontBig>Busque as viagens</Button>
+       </S.Form>
+     </S.Main>
     </S.Container>
   )
 }

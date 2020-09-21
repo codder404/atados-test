@@ -36,3 +36,9 @@ export const HeaderDescription = styled.p`
   margin-top: 2.4rem;
   color: #AAFAFF;
 `;
+
+export const Main = styled.main``;
+
+export const Form = styled.form``;
+
+export const FormGroup = styled.div``;
