@@ -12,12 +12,15 @@
 </p>
 <h1 align="center">
     <img alt="Atados" title="#Atados" src="./src/assets/icons/Logo.svg" />
+    Atados
 </h1>
 
 <h4 align="center"> 
    <img alt="Atados" title="#Atados" src="./src/assets/atados.png" />
-   Atados
 </h1>
+</h4>
+<h4>
+  <img src="./src/assets/atados.gif" width="400" height="200" />
 </h4>
 
 <p align="center">
