@@ -1,18 +1,23 @@
 import React, { useState } from 'react';
+import * as FaIcon from 'react-icons/fa';
 
 import logo from '../../assets/icons/Logo.svg';
 
 import * as S from './styles';
 
 function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => setOpen(!open);
+
   return (
     <S.Navbar>
       <S.NavbarContainer>
         <S.NavbarLogo to="/">
           <S.LogoImg src={logo} alt="Atatos" />
         </S.NavbarLogo>
-        <S.MobileIcon>
-
+        <S.MobileIcon onClick={handleClick}>
+          {open ? <FaIcon.FaTimes /> : <FaIcon.FaBars />}
         </S.MobileIcon>
         <S.NavbarMenu>
           <S.NavbarItems>
